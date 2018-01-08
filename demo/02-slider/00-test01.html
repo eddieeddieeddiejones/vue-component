@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 868px;
+      height: 352px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .container img {
+      width: 70%;
+      position: absolute;
+      left: 50%;
+      /*margin-left取的百分比是父元素的百分比*/
+      margin-left: -35%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./image/slide1.jpg" alt="" srcset="./image/slide1@2x.jpg">
+  </div>
+</body>
+</html>

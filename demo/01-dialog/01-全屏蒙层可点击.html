@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .a {
+      background-color: rgba(0,0,0,0.3);
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="a" @click="haha">
+    <div class="b"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/vue@2.5.9/dist/vue.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    methods: {
+      haha () {
+        console.log('haha')
+      }
+    }
+  })
+</script>
+</body>
+</html>
